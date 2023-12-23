@@ -18,7 +18,8 @@ const projectVariant = {
 const Project = ({ title, content, url }) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
     bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
-  const projectTitle = title;
+  
+    const projectTitle = title;
 
   return (
     <motion.div variants={projectVariant} className="relative">
@@ -33,7 +34,7 @@ const Project = ({ title, content, url }) => {
           {content}
         </p>
       </div>
-      <img src={`assets/${projectTitle}.jpg`} alt={projectTitle}/>
+      <img src={process.env.PUBLIC_URL + `assets/${projectTitle}.jpg`} alt={projectTitle}/>
     </motion.div>
   );
 };
