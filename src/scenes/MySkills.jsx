@@ -23,9 +23,8 @@ const MySkills = () => {
             MY <span className="text-red">SKILLS</span>
           </p>
           <LineGradient width="w-1/3" />
-          <p className="mt-10 mb-7">
-            Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut
-            fames odio in at.
+          <p className="mt-10 mb-7 md:text-lg md:text-start">
+          Passionate about creating seamless, user-centric web experiences through thoughtful and innovative design on the frontend, coupled with the development of robust and scalable server-side solutions on the backend.
           </p>
         </motion.div>
 
@@ -38,7 +37,7 @@ const MySkills = () => {
               <img
                 alt="skills"
                 className="z-10"
-                src="assets/skills-image.png"
+                src="assets/skills.jpg"
               />
             </div>
           ) : (
@@ -49,7 +48,7 @@ const MySkills = () => {
 
       {/* SKILLS */}
       <div className="md:flex md:justify-between mt-16 gap-32">
-        {/* EXPERIENCE */}
+        {/* Front End */}
         <motion.div
           className="md:w-1/3 mt-10"
           initial="hidden"
@@ -65,19 +64,17 @@ const MySkills = () => {
             <div className="z-10">
               <p className="font-playfair font-semibold text-5xl">01</p>
               <p className="font-playfair font-semibold text-3xl mt-3">
-                Experience
+                Frontend Development
               </p>
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
           </div>
-          <p className="mt-5">
-            A auctor pharetra hendrerit mattis amet etiam interdum platea. Est
-            morbi porttitor scelerisque fermentum, sagittis non egestas. Amet
-            odio sit sagittis,
+          <p className="mt-5 md:text-lg">
+            Crafting responsive and visually compelling user interfaces with expertise in React, Next.js, and Tailwind CSS for a seamless and engaging frontend development experience.
           </p>
         </motion.div>
 
-        {/* INNOVATIVE */}
+        {/* Backend */}
         <motion.div
           className="md:w-1/3 mt-10"
           initial="hidden"
@@ -93,19 +90,16 @@ const MySkills = () => {
             <div className="z-10">
               <p className="font-playfair font-semibold text-5xl">02</p>
               <p className="font-playfair font-semibold text-3xl mt-3">
-                Innovative
+                Backend Development
               </p>
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
           </div>
-          <p className="mt-5">
-            Urna, eget pulvinar dolor cursus volutpat dictum odio. Nec ultricies
-            amet in in neque nibh tortor. Libero sed pretium justo nulla blandit
-            nulla amet habitant iaculis. Iaculis in congue vitae sollicitudin
-            faucibus a
+          <p className="mt-5 md:text-lg ">
+            Architecting scalable and efficient server-side solutions using Node.js, Express.js, and proficiently managing databases with MongoDB and MySQL for a robust and dynamic backend development experience.
           </p>
         </motion.div>
-        {/* IMAGINATIVE */}
+        {/* Executive Acumen */}
         <motion.div
           className="md:w-1/3 mt-10"
           initial="hidden"
@@ -121,16 +115,13 @@ const MySkills = () => {
             <div className="z-10">
               <p className="font-playfair font-semibold text-5xl">03</p>
               <p className="font-playfair font-semibold text-3xl mt-3">
-                Imaginative
+              Executive Acumen
               </p>
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
           </div>
-          <p className="mt-5">
-            Accumsan eu fringilla nisi, eget. Vitae, eget ut id proin arcu in
-            curabitur. Lectus libero, egestas enim aliquam quis felis amet.
-            Sagittis, amet netus fringilla netus lobortis odio sed platea.
-            Bibendum.
+          <p className="mt-5 md:text-lg">
+            Navigating leadership challenges with finesse, I adeptly communicate and manage teams to drive success in complex business environments.
           </p>
         </motion.div>
       </div>
