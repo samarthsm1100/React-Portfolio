@@ -15,20 +15,25 @@ const projectVariant = {
   visible: { opacity: 1, scale: 1 },
 };
 
-const Project = ({ title, content }) => {
+const Project = ({ title, content, url }) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
     bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
-  const projectTitle = title.split(" ").join("-").toLowerCase();
+  const projectTitle = title;
 
   return (
     <motion.div variants={projectVariant} className="relative">
       <div className={overlayStyles}>
-        <p className="text-2xl font-playfair">{title}</p>
-        <p className="mt-7">
+        <p 
+          className="text-3xl font-playfair hover:font-semibold hover:text-red hover:cursor-pointer"
+          onClick={() => {window.open(url, '_black')}}
+        >
+          {title}
+        </p>
+        <p className="mt-7 text-lg">
           {content}
         </p>
       </div>
-      <img src={`../assets/${projectTitle}.jpeg`} alt={projectTitle} />
+      <img src={`../assets/${projectTitle}.jpg`} alt={projectTitle}/>
     </motion.div>
   );
 };
@@ -56,17 +61,15 @@ const Projects = () => {
             <LineGradient width="w-2/3" />
           </div>
         </div>
-        <p className="mt-10 mb-10">
-          Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut
-          fames odio in at. At magna ornare dictum lectus. Purus massa morbi
-          purus nec eget eleifend ut elit.
+        <p className="mt-10 mb-10 md:text-lg">
+        Presenting a showcase of my diverse projects, each a testament to my creativity, innovation, and technical expertise.
         </p>
       </motion.div>
 
       {/* PROJECTS */}
       <div className="flex justify-center">
         <motion.div
-          className="sm:grid sm:grid-cols-3"
+          className="sm:grid sm:grid-cols-3 "
           variants={container}
           initial="hidden"
           whileInView="visible"
@@ -75,22 +78,22 @@ const Projects = () => {
           {/* ROW 1 */}
           <div
             className="flex justify-center text-center items-center p-10 bg-red
-              max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
+            text-2xl font-playfair font-semibold object-contain"
           >
             BEAUTIFUL USER INTERFACES
           </div>
           <Project 
-            title="Project 1" 
-            content="Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla
-            porttitor accumsan tincidunt."
+            title="Agro-Guru" 
+            content="Agro-Guru is a website connecting farmers to local markets, laboratories, and nurseries, enhancing access to essential resources for improved agricultural productivity."
+            url="https://github.com/samarthsm1100"
           />
           <Project 
-            title="Project 2" 
-            content="Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla
-            porttitor accumsan tincidunt."
+            title="Food-App" 
+            content="The food app is a visually appealing website for restaurants crafted with Tailwind CSS, offering an aesthetically pleasing and user-friendly experience for customers."
+            url="https://sm-food-app.vercel.app/"
           />
 
-          {/* ROW 2 */}
+          {/* ROW 2
           <Project 
             title="Project 3" 
             content="Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla
@@ -105,25 +108,25 @@ const Projects = () => {
             title="Project 5" 
             content="Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla
             porttitor accumsan tincidunt."
-          />
+          /> */}
 
           {/* ROW 3 */}
           <Project 
-            title="Project 6" 
-            content="Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla
-            porttitor accumsan tincidunt."
+            title="E-Shopping" 
+            content="The shopping cart website utilizes the useContext hook to enable users to dynamically update their cart while shopping, providing a seamless and interactive shopping experience."
+            url="https://sm-shopping-cart.vercel.app/"
           />
           <Project 
-            title="Project 7" 
-            content="Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla
-            porttitor accumsan tincidunt."
+            title="Workout-Buddy" 
+            content="Workout Buddy, a full-stack website with user authentication, facilitates personalized fitness experiences through customizable workout plans and user profiles."
+            url="https://github.com/samarthsm1100"
           />
 
           <div
             className="flex justify-center text-center items-center p-10 bg-blue
-              max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
+            text-2xl font-playfair font-semibold object-contain"
           >
-            SMOOTH USER EXPERIENCE
+            Engineering Efficient ServerSide Solutions.
           </div>
           
         </motion.div>
