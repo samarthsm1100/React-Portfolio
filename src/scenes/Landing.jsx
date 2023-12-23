@@ -14,13 +14,13 @@ const Landing = ({ setSelectedPage }) => {
       <div className="basis-3/5 z-10 mt-16 md:mt-32 flex justify-center md:order-2">
         {isAboveLarge ? (
           <div
-            className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-t-[400px]
+            className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-[10px]
             before:w-full before:max-w-[400px] md:before:max-w-[600px] before:h-full before:border-2 before:border-blue before:z-[-1]"
           >
             <img
               alt="profile"
-              className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px]"
-              src="assets/profile-image.png"
+              className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px] md:rounded-[10px]"
+              src="assets/sm.jpg"
             />
           </div>
         ) : (
@@ -55,9 +55,8 @@ const Landing = ({ setSelectedPage }) => {
             </span>
           </p>
 
-          <p className="mt-10 mb-7 text-sm text-center md:text-start">
-            Adipiscing arcu, in aliquam fringilla cursus. Elit arcu elementum
-            viverra malesuada sem ac faucibus dolor. Sagittis scelerisque.
+          <p className="mt-10 pt-5 mb-7 text-xl text-center md:text-left">
+          "Passionate <span className="font-bold text-blue">MERN Stack Developer</span> with a keen eye for crafting seamless digital experiences. Leveraging the power of <span className="font-bold text-red">MongoDB, Express.js, React, and Node.js,</span> I bring innovation to life in the world of Full Stack Development. Beyond code, my journey is defined by a deep interest in Competitive Programming and Data Structures, ensuring that every solution is not just functional but optimally designed for efficiency and elegance."
           </p>
         </motion.div>
 
