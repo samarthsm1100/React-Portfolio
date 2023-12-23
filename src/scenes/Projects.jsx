@@ -33,7 +33,7 @@ const Project = ({ title, content, url }) => {
           {content}
         </p>
       </div>
-      <img src={`./assets/${projectTitle}.jpg`} alt={projectTitle}/>
+      <img src={`/assets/${projectTitle}.jpg`} alt={projectTitle}/>
     </motion.div>
   );
 };
