@@ -34,7 +34,7 @@ const Project = ({ title, content, url }) => {
           {content}
         </p>
       </div>
-      <img src={process.env.PUBLIC_URL + `assets/${projectTitle}.jpg`} alt={projectTitle}/>
+      <img src={`/assets/${projectTitle}.JPG`} alt={projectTitle}/>
     </motion.div>
   );
 };
