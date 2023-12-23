@@ -50,7 +50,7 @@ const Contact = () => {
                         visible: { opacity: 1, y: 0 },
                     }}
                 >
-                    <img src='../assets/contact-image.jpeg' alt='contact'/>
+                    <img src='../assets/cm.jpg' alt='contact' className='rounded-lg'/>
                 </motion.div>
 
                 <motion.div

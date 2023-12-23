@@ -7,9 +7,9 @@ import Landing from "./scenes/Landing.jsx";
 import LineGradient from "./components/LineGradient.jsx"
 import MySkills from "./scenes/MySkills.jsx";
 import Projects from "./scenes/Projects.jsx"
-import Testimonials from "./scenes/Testimonials.jsx"
 import Contact from "./scenes/Contact.jsx";
 import Footer from "./scenes/Footer.jsx"
+import Experience from "./scenes/Experience.jsx";
 
 function App() {
 
@@ -56,7 +56,7 @@ function App() {
         <Projects />
       </div>
       <div className="w-5/6 mx-auto md:h-full">
-        <Testimonials />
+        <Experience />
       </div>
       <LineGradient />
       <div className="w-5/6 mx-auto md:h-full">  

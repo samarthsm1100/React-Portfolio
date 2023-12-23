@@ -10,7 +10,7 @@ const Footer = () => {
             SAMARTH MALI
           </p>
           <p className="font-playfair text-md text-yellow">
-            ©2022 SM1100. All Rights Reserved.
+            ©2023 SM1100. All Rights Reserved.
           </p>
         </div>
       </div>

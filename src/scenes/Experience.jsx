@@ -1,9 +1,9 @@
 import LineGradient from "../components/LineGradient";
 import { motion } from "framer-motion";
 
-const Testimonials = () => {
+const Experience = () => {
   return (
-    <section id="testimonials" className="pt-32 pb-16">
+    <section id="experiences" className="pt-32 pb-16">
       {/* HEADING */}
       <motion.div
         className="md:w-1/3 text-center md:text-left"
@@ -17,12 +17,11 @@ const Testimonials = () => {
         }}
       >
         <p className="font-playfair font-semibold text-4xl mb-5 text-red">
-          TESTIMONIALS
+          Experiences
         </p>
-        <LineGradient width="mx-auto w-2/5" />
-        <p className="mt-10">
-          Here's What People are Saying About My Work. Aliquam aliquet integer
-          ut fames odio in at. At magna ornare dictum lectus.
+        <LineGradient width="md:ml-0 md:w-2/5" />
+        <p className="mt-10 md:text-lg">
+          Outlined below is information pertaining to my academic credentials and active participation in a professional club.
         </p>
       </motion.div>
 
@@ -30,7 +29,7 @@ const Testimonials = () => {
       <div className="md:flex md:justify-between gap-8">
         <motion.div
           className="mx-auto relative bg-blue max-w-[400px] h-[350px] flex flex-col justify-end p-16 mt-48
-            before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-person1"
+            before:absolute  before:top-[-200px] md:before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-school"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -40,15 +39,16 @@ const Testimonials = () => {
             visible: { opacity: 1, scale: 1 },
           }}
         >
-          <p className="font-playfair text-6xl">“</p>
-          <p className="text-center text-xl">
-            A auctor pharetra hendrerit mattis amet etiam interdum platea.
+          <p className="font-playfair text-lg text-center pr-2 font-semibold text-deep-blue">Sanjay Ghoadawat<br/> Olympaid Academy</p>
+          <hr className="bg-white my-1 "/>
+          <p className="text-center text-xl ">
+            Completed my 9th to 12th grades, concurrently undertaking JEE Mains and CET preparation, within the framework of this academy.
           </p>
         </motion.div>
 
         <motion.div
           className="mx-auto relative bg-red max-w-[400px] h-[350px] flex flex-col justify-end p-16 mt-48
-            before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-person2"
+            before:absolute before:top-[-180px] md:before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-clg"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -58,16 +58,16 @@ const Testimonials = () => {
             visible: { opacity: 1, scale: 1 },
           }}
         >
-          <p className="font-playfair text-6xl">“</p>
+          <p className="font-playfair text-lg text-center pr-2 font-semibold text-deep-blue">Pune Institute Of<br/>Computer Technology</p>
+          <hr className="bg-white my-1 "/>
           <p className="text-center text-xl">
-            Aliquam aliquet integer ut fames odio in at. At magna ornare dictum
-            lectus.
+            I am pursuing a Bachelor's degree in Computer Engineering at this institution, with an expected culmination of my studies in 2025.
           </p>
         </motion.div>
 
         <motion.div
           className="mx-auto relative bg-yellow max-w-[400px] h-[350px] flex flex-col justify-end p-16 mt-48
-            before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-person3"
+            before:absolute before:top-[-180px] md:before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-pasc"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -77,9 +77,8 @@ const Testimonials = () => {
             visible: { opacity: 1, scale: 1 },
           }}
         >
-          <p className="font-playfair text-6xl">“</p>
           <p className="text-center text-xl">
-            Fames odio in at. At magna ornare dictum lectus.
+            My involvement in the PASC club has honed my leadership and communication skills, providing valuable real-world experience in both domains.
           </p>
         </motion.div>
       </div>
@@ -87,4 +86,4 @@ const Testimonials = () => {
   );
 };
 
-export default Testimonials;
+export default Experience;

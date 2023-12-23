@@ -41,7 +41,7 @@ const MySkills = () => {
               />
             </div>
           ) : (
-            <img alt="skills" className="z-10" src="assets/skills-image.png" />
+            <img alt="skills" className="z-10" src="assets/skills.jpg" />
           )}
         </div>
       </div>
